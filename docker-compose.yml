@@ -1,0 +1,19 @@
+version: '3'
+services:
+  mongodb:
+    image: mongo
+    container_name: mi-contenedor-mongodb
+    networks:
+      - mi-red
+  app:
+    build: .
+    container_name: mi-contenedor-app
+    networks:
+      - mi-red
+    depends_on:
+      - mongodb
+    ports:
+      - "3000:3000"
+networks:
+  mi-red:
+    driver: bridge

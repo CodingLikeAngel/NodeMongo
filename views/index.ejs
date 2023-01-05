@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="<%= stylesheet %>">
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to My Site</h1>
+    </header>
+    <main>
+      <form method="post" action="/login">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br>
+        <input type="submit" value="Login">
+      </form>
+    </main>
+    <footer>
+      <p>Copyright 2021 My Site</p>
+    </footer>
+  </body>
+</html>

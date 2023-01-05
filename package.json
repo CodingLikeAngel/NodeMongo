@@ -1,0 +1,18 @@
+{
+  "name": "ann",
+  "version": "1.0.0",
+  "description": "neuronal network testing cases",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "angel nieto",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "jsonwebtoken": "^9.0.0",
+    "mongodb": "^4.13.0"
+  }
+}
